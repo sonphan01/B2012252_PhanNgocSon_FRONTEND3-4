@@ -17,6 +17,13 @@ const routes =[
         name: 'notfound',
         component: () => import('@/views/NotFound.vue'),
     },
+
+    {
+        path: 'contact/:id',
+        name: 'contact.edit',
+        component: () => import('/Users/phann/Documents/GitHub/B2012252_PhanNgocSon_FRONTEND3-4/contactbook-frontend/src/views/contactEdit.vue'),
+        props: true
+    },
 ];
 
 const router = createRouter({
